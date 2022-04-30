@@ -9,6 +9,10 @@ tasks:
   - name: Terminal 2
     init: echo "This is terminal 2"
     command: echo "Hello from terminal 2"
+  - name: db
+    command: |
+      mkdir -p /workspace/data
+      mongod --dbpath /workspace/data    
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
