@@ -10,9 +10,10 @@ tasks:
   - name: Dev Server
     init: npm install
     command: npm run dev
-  - name: Terminal 2
-    init: echo "This is terminal 2"
-    command: echo "Hello from terminal 2"
+  - name: Dev Tests
+    command: |
+      gp await-port 3000
+      npm run watch
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
