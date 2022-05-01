@@ -1,4 +1,5 @@
 const app = require('./app');
+require('dotenv').config();
 
 // set up listener
 const server = app.listen(3000, () => {
