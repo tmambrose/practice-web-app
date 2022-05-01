@@ -6,7 +6,7 @@ const router = express.Router();
 // root url response
 // send form template to the client
 router.get('/', (req, res) => {
-  res.render('form');
+  res.render('form', { title: 'Registration form' });
 });
 
 module.exports = router;
