@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router(); // get router to respond to requests
-const { body, validationResult } = require('express-validator/check');
+const { body, validationResult } = require('express-validator');
 
 // root url response
 // send form template to the client
