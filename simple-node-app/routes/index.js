@@ -4,8 +4,9 @@ const express = require('express');
 const router = express.Router();
 
 // root url response
+// send form template to the client
 router.get('/', (req, res) => {
-  res.send('It works! Okay!');
+  res.render('form');
 });
 
 module.exports = router;
