@@ -16,7 +16,7 @@ tasks:
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
-  - port: 8000 # client
+  - port: 3000 # client
     onOpen: open-preview
   - port: 27017 # mongodb
     onOpen: ignore    
