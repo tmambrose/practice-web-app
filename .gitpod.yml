@@ -10,7 +10,7 @@ tasks:
       (mongod --dbpath /workspace/data &)
   - name: Dev Server
     init: npm install
-    command: npm run dev
+    command: npm run watch
   - name: Dev Tests
     command: |
       gp await-port 3000
