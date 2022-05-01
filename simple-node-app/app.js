@@ -11,11 +11,10 @@ const app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
+app.use(bodyParser.urlencoded({ extended: true }));
+
 // whenever a request comes from forward slash
 // anything, use routes file
-app.use('/', routes);
-
-app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/', routes);
 
 module.exports = app;
